@@ -13,8 +13,53 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header page__header">
+        <div class="header__inner container">
+          <a class="header__logo-link" href="#">
+            <img
+              class="header__logo-image"
+              src="./img/svg/logo.svg"
+              alt="Логотип компании"
+              width="55"
+              height="55"
+            />
+            <div class="header__text-wrapper">
+              <p>Smart&nbsp;Device</p>
+              <span>умные технологии</span>
+            </div>
+          </a>
+          <div class="header__contacts">
+            <a
+              class="header__contacts-link header__contacts-link--mailto"
+              href="mailto:info@sd.ru"
+            >
+              <svg
+                class="header__icon"
+                width="20"
+                height="20"
+                focusable="false"
+              >
+                <use xlink:href="./img/sprite.svg#email-icon"></use>
+              </svg>
+              <span>info@sd.ru</span>
+            </a>
+            <a
+              class="header__contacts-link header__contacts-link--phone"
+              href="tel:+7(495)0005252"
+            >
+              <svg
+                class="header__icon"
+                width="20"
+                height="20"
+                focusable="false"
+              >
+                <use xlink:href="./img/sprite.svg#phone-icon"></use>
+              </svg>
+              <span>+7 (495) 000 52 52</span></a
+            >
+          </div>
+          <a class="header__btn btn" href="#"> Заказать звонок </a>
+        </div>
       </header>
       <main>
         <section class="intro"></section>
