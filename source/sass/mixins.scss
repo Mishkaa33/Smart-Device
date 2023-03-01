@@ -19,8 +19,12 @@
 }
 
 @mixin active {
-  &.focus-visible:active {
-    @content;
+  @media (hover: hover) {
+    &:active,
+    &:hover:active,
+    &.focus-visible:active {
+      @content;
+    }
   }
 }
 
@@ -33,6 +37,18 @@
 
   &.focus-visible:focus {
     @content;
+  }
+}
+
+@mixin interactive {
+  transition: opacity $trans-default;
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+
+  @include active {
+    opacity: 1;
   }
 }
 
