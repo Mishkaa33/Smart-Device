@@ -16,7 +16,7 @@ html {
   font-weight: 400;
   font-size: $fz-default;
   line-height: 24px;
-  font-family: $roboto;
+  font-family: $roboto-condensed;
   color: $black-pearl;
 
   -webkit-font-smoothing: antialiased;
@@ -34,7 +34,7 @@ body {
 }
 
 a {
-  color: $color-default-black;
+  color: inherit;
   text-decoration: none;
 }
 
