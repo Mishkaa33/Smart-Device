@@ -1047,7 +1047,7 @@ button,
   position: absolute;
   top: 3px;
   right: 2px;
-  background-image: url("../../img/svg/arrow-checkbox.svg");
+  background-image: url("../img/svg/arrow-checkbox.svg");
   background-repeat: no-repeat;
   width: 9px;
   height: 6px;
@@ -1840,7 +1840,7 @@ button,
   height: 60px;
   bottom: 0;
   right: 1px;
-  background-image: url("../../img/svg/arrow.svg");
+  background-image: url("../img/svg/arrow.svg");
   background-repeat: no-repeat;
   background-position: 54% 50%;
   background-color: #00b2ff;
