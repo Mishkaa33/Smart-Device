@@ -56,16 +56,18 @@
     }
   }
 
-  input:checked+.custom-toggle__icon {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 3px;
-      right: 2px;
-      background-image: url("../img/svg/arrow-checkbox.svg");
-      background-repeat: no-repeat;
-      width: 9px;
-      height: 6px;
+  input:checked {
+    +.custom-toggle__icon {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        right: 2px;
+        background-image: url("../img/svg/arrow-checkbox.svg");
+        background-repeat: no-repeat;
+        width: 9px;
+        height: 6px;
+      }
     }
   }
 
