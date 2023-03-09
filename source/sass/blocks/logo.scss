@@ -1,0 +1,18 @@
+.logo {
+  transform: translateY(4px);
+  max-width: 215px;
+
+  @include interactive;
+
+  @include vp-767 {
+    width: auto;
+    max-width: none;
+  }
+}
+
+.logo__image {
+  @include vp-767 {
+    width: 35px;
+    height: 35px;
+  }
+}

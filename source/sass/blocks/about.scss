@@ -1,0 +1,112 @@
+.about {
+  padding: 55px 0 95px 0;
+
+  @include vp-1023 {
+    padding: 36px 0 81px;
+  }
+
+  @include vp-767 {
+    padding: 23px 0 80px;
+  }
+}
+
+.about__image-year {
+  min-width: 150px;
+
+  @include vp-1023 {
+    transform: translate(-4px, 5px);
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.about__wrapper {
+  padding: 5px 0;
+  display: flex;
+  gap: 0 100px;
+
+  @include vp-1023 {
+    padding: 0;
+    gap: 0 25px;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.about__wrapper-content {
+  h2 {
+    margin: 0 0 12px 0;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+
+    @include vp-767 {
+      font-size: 28px;
+      line-height: 39px;
+    }
+  }
+
+  p {
+    margin: 0 0 23px 0;
+    font-family: $ptmono;
+    line-height: 21.5px;
+
+    @include vp-1023 {
+      margin-bottom: 22px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 19px 0;
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    &:nth-child(3n) {
+      margin-bottom: 41px;
+
+      @include vp-1023 {
+        margin-bottom: 18px;
+      }
+
+      @include vp-767 {
+        margin-bottom: 13px;
+      }
+    }
+  }
+}
+
+.about__accordion-button {
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-color: $deep-sky-blue;
+  color: $deep-sky-blue;
+  padding: 14px 13px 11px 12px;
+  width: 18.5%;
+  transition: $trans-default;
+
+  @include vp-1023 {
+    width: 36.5%;
+  }
+
+  @include vp-767 {
+    padding: 9px 13px 8px 12px;
+    width: 59.5%;
+  }
+
+  @include hover-focus {
+    background-color: $deep-sky-blue;
+    color: $color-default-white;
+  }
+}
+
+.about__wrapper-mobile-hide {
+  @include vp-767 {
+    display: none;
+  }
+}

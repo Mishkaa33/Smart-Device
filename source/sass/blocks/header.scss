@@ -1,18 +1,8 @@
 .header {
   padding: 27px 0 40px;
-  color: #f2f5f6;
+  color: $alice-blue;
   background-image: linear-gradient(#041827 84.9%, rgba(255, 255, 255, 0));
-
-  @include vp-1023 {
-    padding: 15px 0 28px;
-  }
-
-  @include vp-767 {
-    padding: 11px 0 24px;
-  }
-}
-
-.page__header {
+  transition: $trans-cubic;
   position: fixed;
   top: 0;
   right: 0;
@@ -20,13 +10,18 @@
   z-index: 99;
 
   @include vp-1023 {
+    padding: 15px 0 28px;
     position: absolute;
+  }
+
+  @include vp-767 {
+    padding: 11px 0 24px;
   }
 }
 
 .header__inner {
   display: flex;
-  gap: 0 13.7%;
+  gap: 0 13.1%;
   align-items: center;
 
   @include vp-1023 {
@@ -37,63 +32,16 @@
   }
 }
 
-.header__logo-image {
-  @include vp-767 {
-    width: 35px;
-    height: 35px;
-  }
-}
-
-.header__logo-link {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 0 15px;
-  transform: translateY(4px);
-  max-width: 215px;
-
-  @include interactive;
-}
-
-.header__text-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 2px 0;
-  padding-top: 5px;
-
-  @include vp-767 {
-    display: none;
-  }
-}
-
-.header__text-wrapper p {
-  margin: 0;
-  color: $alice-blue;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 29px;
-}
-
-.header__text-wrapper span {
-  display: block;
-  color: rgba(255, 255, 255, 0.7);
-  font-family: $roboto;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-}
-
 .header__contacts {
   display: flex;
   flex-wrap: wrap;
-  gap: 0 120px;
-  margin: 0 0 0 5px;
+  gap: 0 121px;
+  transition: $trans-cubic;
 
   @include vp-1023 {
-    margin: 0;
+    margin: 0 25px 0 0;
     gap: 0 30px;
     justify-content: end;
-    margin: 0 25px 0 0;
   }
 
   @include vp-767 {
@@ -102,10 +50,12 @@
 }
 
 .header__contacts-link {
-  font-family: "PT Mono";
+  font-family: $ptmono;
   display: flex;
   align-items: center;
   gap: 0 15px;
+
+  transition: $trans-default;
 
   @include vp-1023 {
     gap: 0;
@@ -117,7 +67,13 @@
     transform: none;
   }
 
-  @include interactive;
+  @include hover-focus {
+    color: $deep-sky-blue;
+  }
+
+  @include active {
+    color: $color-default-white;
+  }
 }
 
 .header__contacts-link span {
@@ -130,6 +86,11 @@
 
 .header__btn {
   min-width: 160px;
+  margin-left: 5px;
+
+  @include hover-focus {
+    color: $deep-sky-blue;
+  }
 
   @include vp-1023 {
     display: none;

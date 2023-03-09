@@ -1,0 +1,41 @@
+.modal-form {
+  max-width: 420px;
+
+  h2 {
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    color: $color-default-white;
+  }
+
+  p {
+    margin: 0;
+    font-family: $ptmono;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-default-white;
+  }
+}
+
+.modal-form__wrapper-checkbox {
+  span {
+    font-family: $ptmono;
+    opacity: 0.8;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-default-white;
+  }
+}
+
+.modal-form__wrapper {
+  margin: 40px 0 0 0;
+}
+
+.modal-form__button {
+  margin: 0 0 25px 0;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  background-color: $black-pearl;
+}
