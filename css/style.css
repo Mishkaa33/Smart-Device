@@ -1032,6 +1032,10 @@ button,
   clip: rect(0 0 0 0);
 }
 
+.custom-toggle input.focus-visible:focus + .custom-toggle__icon {
+  opacity: 0.4;
+}
+
 .custom-toggle--checkbox .custom-toggle__icon {
   position: absolute;
   top: calc(-9px + 50%);
@@ -1363,9 +1367,6 @@ button,
   -webkit-transition: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   -o-transition: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   transition: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-}
-
-.page__header {
   position: fixed;
   top: 0;
   right: 0;
@@ -1404,13 +1405,13 @@ button,
   -ms-flex-align: center;
   align-items: center;
   gap: 0 15px;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .header__contacts-link.focus-visible:focus {
-  opacity: 0.8;
+  color: #00b2ff;
 }
 
 .header__contacts-link span {
@@ -1420,6 +1421,10 @@ button,
 .header__btn {
   min-width: 160px;
   margin-left: 5px;
+}
+
+.header__btn.focus-visible:focus {
+  color: #00b2ff;
 }
 
 .main-header {
@@ -1524,7 +1529,7 @@ button,
 
 .main-footer__social-list {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 10px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1532,7 +1537,6 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 0 15px;
-  padding: 0 0 0 10px;
 }
 
 .main-footer__social-link {
@@ -1591,14 +1595,19 @@ button,
 
 .main-footer__navigation-link {
   font-family: "PT Mono", "Arial", sans-serif;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
   color: rgba(255, 255, 255, 0.7);
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+}
+
+.main-footer__navigation-link--adress {
+  pointer-events: none;
+  font-style: normal;
 }
 
 .main-footer__navigation-link.focus-visible:focus {
-  opacity: 0.8;
+  color: #00b2ff;
 }
 
 .main-footer__contacts-list {
@@ -1748,6 +1757,12 @@ button,
   margin-bottom: 13px;
 }
 
+.advantages__item__icon--privacy {
+  -webkit-transform: translateX(-6px);
+  -ms-transform: translateX(-6px);
+  transform: translateX(-6px);
+}
+
 .about {
   padding: 55px 0 95px 0;
 }
@@ -1790,6 +1805,14 @@ button,
   color: #00b2ff;
   padding: 14px 13px 11px 12px;
   width: 18.5%;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.about__accordion-button.focus-visible:focus {
+  background-color: #00b2ff;
+  color: #ffffff;
 }
 
 .catalog {
@@ -1861,7 +1884,7 @@ button,
 
 .catalog__item-link p {
   max-width: 230px;
-  position: absolute;
+  position: relative;
   margin: 0;
   padding: 48px 35px 40px 40px;
   font-weight: 400;
@@ -2095,9 +2118,6 @@ button,
 
   .header {
     padding: 15px 0 28px;
-  }
-
-  .page__header {
     position: absolute;
   }
 
@@ -2246,7 +2266,10 @@ button,
   }
 
   .advantages__item__icon--privacy {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
   }
 
   .about {
@@ -2720,6 +2743,16 @@ button,
     opacity: 1;
   }
 
+  .custom-toggle input:hover:not(.focus-visible) + .custom-toggle__icon {
+    opacity: 0.4;
+  }
+
+  .custom-toggle input:active + .custom-toggle__icon,
+  .custom-toggle input:hover:active + .custom-toggle__icon,
+  .custom-toggle input.focus-visible:active + .custom-toggle__icon {
+    opacity: 0.8;
+  }
+
   .custom-select__item[aria-selected=true]:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.2);
   }
@@ -2729,13 +2762,17 @@ button,
   }
 
   .header__contacts-link:hover:not(.focus-visible) {
-    opacity: 0.8;
+    color: #00b2ff;
   }
 
   .header__contacts-link:active,
   .header__contacts-link:hover:active,
   .header__contacts-link.focus-visible:active {
-    opacity: 1;
+    color: #ffffff;
+  }
+
+  .header__btn:hover:not(.focus-visible) {
+    color: #00b2ff;
   }
 
   .main-footer__logo:hover:not(.focus-visible) {
@@ -2759,13 +2796,13 @@ button,
   }
 
   .main-footer__navigation-link:hover:not(.focus-visible) {
-    opacity: 0.8;
+    color: #00b2ff;
   }
 
   .main-footer__navigation-link:active,
   .main-footer__navigation-link:hover:active,
   .main-footer__navigation-link.focus-visible:active {
-    opacity: 1;
+    color: #c4c4c4;
   }
 
   .logo:hover:not(.focus-visible) {
@@ -2798,6 +2835,11 @@ button,
     -webkit-transition: ease-in-out 0.2s;
     -o-transition: ease-in-out 0.2s;
     transition: ease-in-out 0.2s;
+  }
+
+  .about__accordion-button:hover:not(.focus-visible) {
+    background-color: #00b2ff;
+    color: #ffffff;
   }
 
   .catalog__item-link:hover:not(.focus-visible) {
