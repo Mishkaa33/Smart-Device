@@ -6,8 +6,12 @@ const changeText = () =>{
   buttonTextChange('about__accordion-button', 'Подробнее', 'Скрыть');
 };
 
-const buttonEventListeners = () =>{
-  button.addEventListener('click', changeText);
+const addButtonEventListeners = () =>{
+  if (button) {
+    button.addEventListener('click', changeText);
+  } else {
+    return;
+  }
 };
 
-export {buttonEventListeners};
+export {addButtonEventListeners};

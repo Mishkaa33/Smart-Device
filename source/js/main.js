@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initAccordions} from './modules/init-accordion';
-import {buttonEventListeners} from './utils/change-text';
+import {addButtonEventListeners} from './utils/change-text';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  buttonEventListeners();
+  addButtonEventListeners();
   // Modules
   // ---------------------------------
 

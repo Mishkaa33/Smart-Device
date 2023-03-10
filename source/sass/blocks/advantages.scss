@@ -59,7 +59,7 @@
   }
 
   @include hover-focus {
-    .advantages__item__icon {
+    .advantages__item-icon {
       fill: $alice-blue-light;
     }
 
@@ -124,7 +124,7 @@
   }
 }
 
-.advantages__item__icon {
+.advantages__item-icon {
   margin-bottom: 13px;
 
   &--privacy {

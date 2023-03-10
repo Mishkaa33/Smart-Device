@@ -14,8 +14,6 @@
 
 @mixin active {
   @media (hover: hover) {
-
-    &:active,
     &:hover:active,
     &.focus-visible:active {
       @content;
