@@ -753,8 +753,8 @@ button,
 
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 16px;
+  right: 15px;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -836,10 +836,10 @@ button,
   margin-bottom: 20px;
 }
 
-.custom-input label input,
-.custom-input label textarea,
-.custom-textarea label input,
-.custom-textarea label textarea {
+.custom-input input,
+.custom-input textarea,
+.custom-textarea input,
+.custom-textarea textarea {
   border: 1px solid transparent;
   width: 100%;
   border-radius: 3px;
@@ -851,50 +851,50 @@ button,
   color: #ffffff;
 }
 
-.custom-input label input::-webkit-input-placeholder,
-.custom-input label textarea::-webkit-input-placeholder,
-.custom-textarea label input::-webkit-input-placeholder,
-.custom-textarea label textarea::-webkit-input-placeholder {
+.custom-input input::-webkit-input-placeholder,
+.custom-input textarea::-webkit-input-placeholder,
+.custom-textarea input::-webkit-input-placeholder,
+.custom-textarea textarea::-webkit-input-placeholder {
   color: #ffffff;
   text-indent: 0;
   -webkit-transition: text-indent 0.3s ease;
   transition: text-indent 0.3s ease;
 }
 
-.custom-input label input::-moz-placeholder,
-.custom-input label textarea::-moz-placeholder,
-.custom-textarea label input::-moz-placeholder,
-.custom-textarea label textarea::-moz-placeholder {
+.custom-input input::-moz-placeholder,
+.custom-input textarea::-moz-placeholder,
+.custom-textarea input::-moz-placeholder,
+.custom-textarea textarea::-moz-placeholder {
   color: #ffffff;
   text-indent: 0;
   -moz-transition: text-indent 0.3s ease;
   transition: text-indent 0.3s ease;
 }
 
-.custom-input label input:-ms-input-placeholder,
-.custom-input label textarea:-ms-input-placeholder,
-.custom-textarea label input:-ms-input-placeholder,
-.custom-textarea label textarea:-ms-input-placeholder {
+.custom-input input:-ms-input-placeholder,
+.custom-input textarea:-ms-input-placeholder,
+.custom-textarea input:-ms-input-placeholder,
+.custom-textarea textarea:-ms-input-placeholder {
   color: #ffffff;
   text-indent: 0;
   -ms-transition: text-indent 0.3s ease;
   transition: text-indent 0.3s ease;
 }
 
-.custom-input label input::-ms-input-placeholder,
-.custom-input label textarea::-ms-input-placeholder,
-.custom-textarea label input::-ms-input-placeholder,
-.custom-textarea label textarea::-ms-input-placeholder {
+.custom-input input::-ms-input-placeholder,
+.custom-input textarea::-ms-input-placeholder,
+.custom-textarea input::-ms-input-placeholder,
+.custom-textarea textarea::-ms-input-placeholder {
   color: #ffffff;
   text-indent: 0;
   -ms-transition: text-indent 0.3s ease;
   transition: text-indent 0.3s ease;
 }
 
-.custom-input label input::placeholder,
-.custom-input label textarea::placeholder,
-.custom-textarea label input::placeholder,
-.custom-textarea label textarea::placeholder {
+.custom-input input::placeholder,
+.custom-input textarea::placeholder,
+.custom-textarea input::placeholder,
+.custom-textarea textarea::placeholder {
   color: #ffffff;
   text-indent: 0;
   -webkit-transition: text-indent 0.3s ease;
@@ -902,55 +902,55 @@ button,
   transition: text-indent 0.3s ease;
 }
 
-.custom-input label input:hover,
-.custom-input label textarea:hover,
-.custom-textarea label input:hover,
-.custom-textarea label textarea:hover {
+.custom-input input:hover,
+.custom-input textarea:hover,
+.custom-textarea input:hover,
+.custom-textarea textarea:hover {
   -webkit-box-shadow: 0 5px 10px 0 rgba(4, 24, 39, 0.5);
   box-shadow: 0 5px 10px 0 rgba(4, 24, 39, 0.5);
 }
 
-.custom-input label input:focus,
-.custom-input label textarea:focus,
-.custom-textarea label input:focus,
-.custom-textarea label textarea:focus {
+.custom-input input:focus,
+.custom-input textarea:focus,
+.custom-textarea input:focus,
+.custom-textarea textarea:focus {
   outline: none;
   -webkit-box-shadow: 0 5px 10px 0 rgba(4, 24, 39, 0.5);
   box-shadow: 0 5px 10px 0 rgba(4, 24, 39, 0.5);
 }
 
-.custom-input label input:focus::-webkit-input-placeholder,
-.custom-input label textarea:focus::-webkit-input-placeholder,
-.custom-textarea label input:focus::-webkit-input-placeholder,
-.custom-textarea label textarea:focus::-webkit-input-placeholder {
+.custom-input input:focus::-webkit-input-placeholder,
+.custom-input textarea:focus::-webkit-input-placeholder,
+.custom-textarea input:focus::-webkit-input-placeholder,
+.custom-textarea textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-.custom-input label input:focus::-moz-placeholder,
-.custom-input label textarea:focus::-moz-placeholder,
-.custom-textarea label input:focus::-moz-placeholder,
-.custom-textarea label textarea:focus::-moz-placeholder {
+.custom-input input:focus::-moz-placeholder,
+.custom-input textarea:focus::-moz-placeholder,
+.custom-textarea input:focus::-moz-placeholder,
+.custom-textarea textarea:focus::-moz-placeholder {
   color: transparent;
 }
 
-.custom-input label input:focus:-ms-input-placeholder,
-.custom-input label textarea:focus:-ms-input-placeholder,
-.custom-textarea label input:focus:-ms-input-placeholder,
-.custom-textarea label textarea:focus:-ms-input-placeholder {
+.custom-input input:focus:-ms-input-placeholder,
+.custom-input textarea:focus:-ms-input-placeholder,
+.custom-textarea input:focus:-ms-input-placeholder,
+.custom-textarea textarea:focus:-ms-input-placeholder {
   color: transparent;
 }
 
-.custom-input label input:focus::-ms-input-placeholder,
-.custom-input label textarea:focus::-ms-input-placeholder,
-.custom-textarea label input:focus::-ms-input-placeholder,
-.custom-textarea label textarea:focus::-ms-input-placeholder {
+.custom-input input:focus::-ms-input-placeholder,
+.custom-input textarea:focus::-ms-input-placeholder,
+.custom-textarea input:focus::-ms-input-placeholder,
+.custom-textarea textarea:focus::-ms-input-placeholder {
   color: transparent;
 }
 
-.custom-input label input:focus::placeholder,
-.custom-input label textarea:focus::placeholder,
-.custom-textarea label input:focus::placeholder,
-.custom-textarea label textarea:focus::placeholder {
+.custom-input input:focus::placeholder,
+.custom-input textarea:focus::placeholder,
+.custom-textarea input:focus::placeholder,
+.custom-textarea textarea:focus::placeholder {
   color: transparent;
 }
 
@@ -1494,7 +1494,7 @@ button,
   background-color: #00b2ff;
 }
 
-.main-header__mboile-show {
+.main-header__mobile-show {
   display: none;
 }
 
@@ -1700,7 +1700,7 @@ button,
   background-color: #00b2ff;
 }
 
-.advantages__item.focus-visible:focus .advantages__item__icon {
+.advantages__item.focus-visible:focus .advantages__item-icon {
   fill: #f2f5f7;
 }
 
@@ -1748,11 +1748,11 @@ button,
   line-height: 22px;
 }
 
-.advantages__item__icon {
+.advantages__item-icon {
   margin-bottom: 13px;
 }
 
-.advantages__item__icon--privacy {
+.advantages__item-icon--privacy {
   -webkit-transform: translateX(-6px);
   -ms-transform: translateX(-6px);
   transform: translateX(-6px);
@@ -1912,7 +1912,7 @@ button,
   margin-right: 10px;
 }
 
-.form__wrapper-label label textarea {
+.form__wrapper-label textarea {
   padding: 22px 15px;
 }
 
@@ -2026,7 +2026,7 @@ button,
 }
 
 .modal-form h2 {
-  margin: 0 0 15px 0;
+  margin: 0;
   font-weight: 400;
   font-size: 30px;
   line-height: 42px;
@@ -2039,6 +2039,10 @@ button,
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+}
+
+.modal-form__wrapper-input textarea {
+  padding: 22px 15px;
 }
 
 .modal-form__wrapper-checkbox span {
@@ -2054,11 +2058,13 @@ button,
 }
 
 .modal-form__button {
-  margin: 0 0 25px 0;
+  margin: 0 0 17px 0;
   width: 100%;
   border: none;
-  padding: 15px;
+  padding: 12px;
   background-color: #041827;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 /* @mixin hover-focus {
@@ -2252,15 +2258,15 @@ button,
     gap: 4px;
   }
 
-  .advantages__item__icon {
+  .advantages__item-icon {
     margin: 0 0 10px 0;
   }
 
-  .advantages__item__icon--price {
+  .advantages__item-icon--price {
     margin-bottom: 3px;
   }
 
-  .advantages__item__icon--privacy {
+  .advantages__item-icon--privacy {
     margin-bottom: 8px;
     -webkit-transform: none;
     -ms-transform: none;
@@ -2325,7 +2331,7 @@ button,
     gap: 0 4.4%;
   }
 
-  .form__wrapper-label label textarea {
+  .form__wrapper-label textarea {
     padding: 29px 15px 14px;
   }
 
@@ -2357,6 +2363,10 @@ button,
 
   .contact-us__wrapper-image {
     display: none;
+  }
+
+  .modal-form__wrapper-input textarea {
+    padding: 29px 15px 14px;
   }
 }
 
@@ -2427,11 +2437,11 @@ button,
     padding: 11px;
   }
 
-  .main-header__mboile-show {
+  .main-header__mobile-show {
     display: block;
   }
 
-  .main-header__mboile-hide {
+  .main-header__mobile-hide {
     display: none;
   }
 
@@ -2574,13 +2584,13 @@ button,
     line-height: 19px;
   }
 
-  .advantages__item__icon {
+  .advantages__item-icon {
     width: 30px;
     height: 30px;
     margin: 0 0 10px;
   }
 
-  .advantages__item__icon--price {
+  .advantages__item-icon--price {
     margin: 0 0 11px;
   }
 
@@ -2664,7 +2674,7 @@ button,
     flex-direction: column;
   }
 
-  .form__wrapper-label label textarea {
+  .form__wrapper-label textarea {
     padding: 23px 14px 46px;
   }
 
@@ -2690,6 +2700,10 @@ button,
   .contact-us__text-wrapper p {
     font-size: 14px;
     line-height: 19px;
+  }
+
+  .modal-form__wrapper-input textarea {
+    padding: 23px 14px 46px;
   }
 }
 
@@ -2722,7 +2736,6 @@ button,
     opacity: 0.8;
   }
 
-  .btn:active,
   .btn:hover:active,
   .btn.focus-visible:active {
     opacity: 1;
@@ -2732,7 +2745,6 @@ button,
     opacity: 0.8;
   }
 
-  .modal__close-btn:active,
   .modal__close-btn:hover:active,
   .modal__close-btn.focus-visible:active {
     opacity: 1;
@@ -2742,7 +2754,6 @@ button,
     opacity: 0.4;
   }
 
-  .custom-toggle input:active + .custom-toggle__icon,
   .custom-toggle input:hover:active + .custom-toggle__icon,
   .custom-toggle input.focus-visible:active + .custom-toggle__icon {
     opacity: 0.8;
@@ -2760,7 +2771,6 @@ button,
     color: #00b2ff;
   }
 
-  .header__contacts-link:active,
   .header__contacts-link:hover:active,
   .header__contacts-link.focus-visible:active {
     color: #ffffff;
@@ -2774,7 +2784,6 @@ button,
     opacity: 0.8;
   }
 
-  .main-footer__logo:active,
   .main-footer__logo:hover:active,
   .main-footer__logo.focus-visible:active {
     opacity: 1;
@@ -2784,7 +2793,6 @@ button,
     opacity: 0.8;
   }
 
-  .main-footer__social-link:active,
   .main-footer__social-link:hover:active,
   .main-footer__social-link.focus-visible:active {
     opacity: 1;
@@ -2794,7 +2802,6 @@ button,
     color: #00b2ff;
   }
 
-  .main-footer__navigation-link:active,
   .main-footer__navigation-link:hover:active,
   .main-footer__navigation-link.focus-visible:active {
     color: #c4c4c4;
@@ -2804,13 +2811,12 @@ button,
     opacity: 0.8;
   }
 
-  .logo:active,
   .logo:hover:active,
   .logo.focus-visible:active {
     opacity: 1;
   }
 
-  .advantages__item:hover:not(.focus-visible) .advantages__item__icon {
+  .advantages__item:hover:not(.focus-visible) .advantages__item-icon {
     fill: #f2f5f7;
   }
 
@@ -2841,7 +2847,6 @@ button,
     opacity: 0.8;
   }
 
-  .catalog__item-link:active,
   .catalog__item-link:hover:active,
   .catalog__item-link.focus-visible:active {
     opacity: 1;
