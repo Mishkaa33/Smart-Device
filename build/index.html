@@ -15,7 +15,7 @@
   <link type="img/favicon" href="./img/favicon/favicon-32x32.png" rel="icon" sizes="32x32" />
   <link type="img/favicon" href="./img/favicon/favicon-16x16.png" rel="icon" sizes="16x16" />
   <link href="./img/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
-  <link href="./img/favicon/site.webmanifest" rel="manifest" />
+  <link href="./img/favicon/site.webmanifest" rel="manifest" crossorigin="use-credentials" />
 </head>
 
 <body>
@@ -163,7 +163,7 @@
               <p>
                 Наши поставщики&nbsp;&mdash; мировые производители электронных
                 компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-                <span class="about__wrapper-mobile-hide">Печатные платы и&nbsp;комплектующие Service Devices
+                <span class="about__text about__text--mobile-hide">Печатные платы и&nbsp;комплектующие Service Devices
                   применяются на&nbsp;предприятиях Российских Железных Дорог
                   (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома,
                   СпецМедТехники. Среди наших клиентов крупнейшие
@@ -174,6 +174,12 @@
                   <div class="about__accordion-content" data-accordion="content">
                     <div class="about__accordion-content-wrapper">
                       <p>
+                        <span class="about__text about__text--mobile-show">Печатные платы и&nbsp;комплектующие Service
+                          Devices
+                          применяются на&nbsp;предприятиях Российских Железных Дорог
+                          (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома,
+                          СпецМедТехники. Среди наших клиентов крупнейшие
+                          Производители светотехники России.</span>
                         Smart Device&nbsp;&mdash; это команда профессионалов.
                         Через нас прошло более
                         1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых
@@ -213,7 +219,7 @@
                       ./img/tablet/production@1x.webp 2x" />
                     <source media="(max-width: 374px)" srcset="./img/mobile/production@1x.jpg,
                       ./img/mobile/production@2x.jpg 2x" />
-                    <source media="(max-width: 1024px)" srcset="./img/tablet/production@1x.jpg,
+                    <source media="(max-width: 1023px)" srcset="./img/tablet/production@1x.jpg,
                       ./img/tablet/production@2x.jpg 2x" />
                     <source type="image/webp" srcset="./img/desktop/production@1x.webp,
                       ./img/desktop/production@2x.webp 2x" />
@@ -303,9 +309,6 @@
                       <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос"></textarea>
                     </label>
                   </div>
-                  <button class="form__wrapper-button btn" type="submit">
-                    Задать вопрос
-                  </button>
                   <div class="form__wrapper-checkbox custom-toggle custom-toggle--checkbox" data-required
                     data-validate-type="checkbox">
                     <label>
@@ -314,6 +317,9 @@
                       <span>Я согласен на обработку персональных данных</span>
                     </label>
                   </div>
+                  <button class="form__wrapper-button btn" type="submit">
+                    Задать вопрос
+                  </button>
                 </div>
               </form>
             </div>
@@ -323,7 +329,7 @@
     </main>
     <footer class="main-footer">
       <div class="container">
-        <div class="accordion main-footer__wrapper" data-accordion="parent" data-destroy="(max-width: 768px)"
+        <div class="accordion main-footer__wrapper" data-accordion="parent" data-destroy="(max-width: 767px)"
           data-single>
           <div class="main-footer__social">
             <div class="main-footer__logo">
@@ -431,36 +437,40 @@
           </p>
           <div class="modal-form__wrapper" data-form-validate data-callback="base">
             <form action="https://echo.htmlacademy.ru/" method="post">
-              <div class="custom-input modal-form__wrapper-input" data-validate-type="text" data-limitation="name"
-                data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения"
-                data-required>
-                <label>
-                  <input type="text" name="name" placeholder="Имя" required data-focus />
-                </label>
+              <div class="modal-form__content">
+                <div class="custom-input modal-form__wrapper-input" data-validate-type="text" data-limitation="name"
+                  data-message-base="Поле обязательно к заполнению"
+                  data-message-extra="Проверьте корректность заполнения" data-required>
+                  <label>
+                    <input type="text" name="name" placeholder="Имя" required data-focus />
+                  </label>
+                </div>
+                <div class="custom-input modal-form__wrapper-input" data-validate-type="phone" data-on-input-validate
+                  data-message-base="Поле обязательно к заполнению"
+                  data-message-extra="Проверьте корректность заполнения" data-message-success="Поле заполнено верно"
+                  data-required>
+                  <label>
+                    <input type="tel" name="phone-number" required placeholder="Телефон" />
+                  </label>
+                </div>
+                <div class="custom-input modal-form__wrapper-input">
+                  <label>
+                    <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос"></textarea>
+                  </label>
+                </div>
+                <div class="custom-toggle custom-toggle--checkbox modal-form__wrapper-checkbox"
+                  data-validate-type="checkbox" data-required>
+                  <label>
+                    <input class="visually-hidden" type="checkbox" name="agree" required checked />
+                    <span class="custom-toggle__icon"></span>
+                    <span>Я согласен на обработку персональных данных</span>
+                  </label>
+                </div>
+                <button class="modal-form__button btn" type="submit">
+                  Отправить
+                </button>
               </div>
-              <div class="custom-input modal-form__wrapper-input" data-validate-type="phone" data-on-input-validate
-                data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения"
-                data-message-success="Поле заполнено верно" data-required>
-                <label>
-                  <input type="tel" name="phone-number" required placeholder="Телефон" />
-                </label>
-              </div>
-              <div class="custom-input modal-form__wrapper-input">
-                <label>
-                  <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос"></textarea>
-                </label>
-              </div>
-              <button class="modal-form__button btn" type="submit">
-                Отправить
-              </button>
-              <div class="custom-toggle custom-toggle--checkbox modal-form__wrapper-checkbox"
-                data-validate-type="checkbox" data-required>
-                <label>
-                  <input class="visually-hidden" type="checkbox" name="agree" required checked />
-                  <span class="custom-toggle__icon"></span>
-                  <span>Я согласен на обработку персональных данных</span>
-                </label>
-              </div>
+
             </form>
           </div>
         </div>
