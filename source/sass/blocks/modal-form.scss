@@ -33,6 +33,8 @@
 }
 
 .modal-form__wrapper-checkbox {
+  order: 5;
+
   span {
     font-family: $ptmono;
     opacity: 0.8;
@@ -40,6 +42,11 @@
     line-height: 16px;
     color: $color-default-white;
   }
+}
+
+.modal-form__content {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .modal-form__wrapper {

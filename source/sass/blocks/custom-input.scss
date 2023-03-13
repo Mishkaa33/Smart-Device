@@ -1,6 +1,5 @@
 .custom-input,
 .custom-textarea {
-
   input,
   textarea {
     border: 1px solid transparent;
@@ -53,7 +52,6 @@
   }
 
   &.is-invalid {
-
     input,
     textarea {
       border: 1px solid #ff1553;
