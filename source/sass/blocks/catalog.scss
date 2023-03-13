@@ -51,7 +51,7 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 0 85px;
+  gap: 85px;
 
   @include vp-1023 {
     grid-template-columns: 1fr;

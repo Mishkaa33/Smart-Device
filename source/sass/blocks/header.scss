@@ -35,7 +35,7 @@
 .header__contacts {
   display: flex;
   flex-wrap: wrap;
-  gap: 0 121px;
+  gap: 10px 121px;
   transition: $trans-cubic;
 
   @include vp-1023 {

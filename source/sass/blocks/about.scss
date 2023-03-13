@@ -105,8 +105,20 @@
   }
 }
 
-.about__wrapper-mobile-hide {
-  @include vp-767 {
+.about__text {
+  margin-bottom: 10px;
+
+  &--mobile-hide {
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  &--mobile-show {
     display: none;
+
+    @include vp-767 {
+      display: block;
+    }
   }
 }
