@@ -1370,10 +1370,10 @@ button,
 }
 
 .header__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 0 13.1%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1385,7 +1385,9 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 10px 121px;
+  gap: 10px 26.3%;
+  width: 460px;
+  margin: 0 11px 0 0;
   -webkit-transition: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   -o-transition: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   transition: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
@@ -1415,7 +1417,8 @@ button,
 
 .header__btn {
   min-width: 160px;
-  margin-left: 5px;
+  margin-left: auto;
+  margin-right: 60px;
 }
 
 .header__btn.focus-visible:focus {
@@ -2144,14 +2147,13 @@ button,
   }
 
   .header__inner {
-    display: -ms-grid;
-    display: grid;
     gap: 0;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
 
   .header__contacts {
+    width: auto;
     margin: 0 25px 0 0;
     gap: 0 30px;
     -webkit-box-pack: end;
